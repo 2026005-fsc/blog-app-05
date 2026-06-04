@@ -1,0 +1,50 @@
+body {
+  background-color: beige;
+}
+
+
+header {
+  display: flex;               /* 横並び */
+  align-items: center;         /* 縦方向中央揃え */
+  justify-content: space-between; /* 両端揃え */
+  background-color: #ff00c3;
+  padding: 20px 40px;
+}
+
+.site-title {
+  color: rgb(255, 255, 0);
+  font-size: 2rem;
+  margin: 0;
+}
+
+/* ホームのリンク */
+.menu {          
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* ひとつひとつのリンクの設定 */
+.menu li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
+
+.back li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.back a {
+  color: #ff00c3;
+  text-decoration: none;
+}
