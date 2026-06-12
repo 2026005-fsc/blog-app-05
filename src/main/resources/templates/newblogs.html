@@ -1,21 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="/css/style.css">
 </head>
+
 <body>
   <!-- ヘッダー -->
-   <header>
+  <header>
     <!-- サイト名 -->
     <h1 class="site-title">mahochannblog</h1>
-    </header>
 
     <!-- ホームに戻る -->
     <ul class="back">
-    <li><a href="/">戻る➡</a></li>
+      <li><a href="/">ホームに戻る</a></li>
     </ul>
+  </header><br>
+
+  <!-- 記事書き -->
+  <form action="/blogs" method="post">
+  <div>
+    <input type="text" name="title" placeholder="タイトル名"><br>
+    <textarea name="content" placeholder="記事を書いてください"></textarea>
+  </div>
+  <br>
+  <br>
+  <div>
+    <input type="submit" name="投稿" value="投稿">
+  </div>
+  </form>
+
 </body>
+
 </html>

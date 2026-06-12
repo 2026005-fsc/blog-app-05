@@ -1,24 +1,35 @@
 <!DOCTYPE html>
-<html lang="ja">
-<head>
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
+
+
+<head th:fragment = "head">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="/css/style.css">
- </head>
-<body>
-  <!-- ヘッダー -->
-   <header>
-    <!-- サイト名 -->
-    <h1 class="site-title">mahochannblog</h1>
+</head>
 
-    <!-- ナビゲーション -->
-     <nav>
-      <ul class="menu">
-        <li><a href="/newblogs">新規登録</a></li>
-        <li><a href="/newblogs">ログイン</a></li>
-      </ul>
-     </nav>
-    </header>
+<body>
+  <header th:replace="~{/layout :: header}"></header>
+
+
+
+
+
+  <!-- ブログタイトル -->
+  <h2>人気急上昇</h2>
+  <tr th:each="blog : ${blogs}">
+
+      <div class="rounded-box">
+      <td><a th:href="@{/blogs/{id}(id=${blog.id})}" th:text="${blog.title}"></a></td>
+      
+  </div>
+
+
+
+
+  <!-- 企業情報 -->
+
 </body>
+
 </html>

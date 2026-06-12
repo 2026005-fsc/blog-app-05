@@ -1,18 +1,19 @@
 body {
-  background-color: beige;
+  background-color: #f8f5f5;
 }
 
-
+/* 一番上のヘッダー */
 header {
   display: flex;               /* 横並び */
   align-items: center;         /* 縦方向中央揃え */
   justify-content: space-between; /* 両端揃え */
-  background-color: #ff00c3;
+  background-color: #FFF6EE;
   padding: 20px 40px;
 }
 
+/* サイト名 */
 .site-title {
-  color: rgb(255, 255, 0);
+  color:#ff68d4;
   font-size: 2rem;
   margin: 0;
 }
@@ -24,27 +25,137 @@ header {
   padding: 0;
 }
 
-/* ひとつひとつのリンクの設定 */
+/* ホームのひとつひとつのリンクの設定 */
 .menu li {
   display: inline-block;
   margin-left: 20px;
 }
 
 .menu a {
-  color: white;
+  color: #664B4F;
   text-decoration: none;
 }
 
-.menu a:hover {
+/* リンクに触れた際の色変え */
+.menu a:hover{
+  color:#DC9F95;
   text-decoration: underline;
 }
 
+/* ホームに戻る */
 .back li {
   display: inline-block;
   margin-left: 20px;
 }
 
 .back a {
-  color: #ff00c3;
+  color: #664B4F;
   text-decoration: none;
 }
+
+.back a:hover{
+  color: #DC9F95;
+}
+
+
+/* 検索フォーム */
+.search-form {
+  display: flex;
+  align-items: center;
+}
+
+.search-form input[type="search"] {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  font-size: 1rem;
+}
+
+.search-form button {
+  padding: 7px 15px;
+  border: none;
+  background-color: #f6ff00;
+  color: white;
+  font-size: 1rem;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+.search-form button:hover {
+  background-color: #f6ff00;
+}
+
+
+
+
+
+
+/* 記事入力画面の大きさ */
+input[type="textarea"]{
+  padding: 200px 500px;
+}
+
+/* 記事入力の位置 */
+
+div{
+  display: flex;               /* 横並び */
+  align-items: center;         /* 縦方向中央揃え */
+  justify-content: center;
+}
+
+/* 保存、送信ボタン */
+input[type="submit"]{
+  padding: 10px 15px;
+  background-color: #ff00c3;
+}
+
+.profile.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 3px;
+  margin-top: 11px;
+  width: 14px;
+  height: 6px;
+  border-left: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+  border-top: solid 1px currentColor;
+  border-bottom: solid 1px transparent;
+  border-radius: 6px 6px 0 0;
+}
+
+.profile.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 3px;
+  margin-top: 11px;
+  width: 14px;
+  height: 6px;
+  border-left: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+  border-top: solid 1px currentColor;
+  border-bottom: solid 1px transparent;
+  border-radius: 6px 6px 0 0;
+}
+.profile.icon:before {
+  content: '';
+  position: absolute;
+  left: 2px;
+  top: -10px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: solid 1px currentColor;
+}
+
+ .rounded-box {
+    border: 2px solid #FFF6EE;
+    background-color: #FFF6EE;
+    padding: 20px;
+    border-radius: 8px;  /* 角を8px分丸める */
+    margin: 20px 0;
+  }
+
+
+
+
+

@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{/blogs :: head}"></head>
+<header th:replace="~{/layout :: header}"></header>
+<body>
+
+  <h1 th:text="${blog.title}"></h1>
+  <p><span th:text="${blog.content}"></span></p>
+</body>
+</html>
